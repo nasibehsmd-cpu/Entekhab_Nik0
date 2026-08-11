@@ -1,0 +1,1368 @@
+/* =========================
+   تنظیمات کلی
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    direction: rtl;
+    background: #ffffff;
+    color: #222222;
+    line-height: 1.9;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   بخش معرفی بالای صفحه
+========================= */
+
+.hero {
+    padding: 45px 20px 35px;
+    background: #ffffff;
+}
+
+.hero-box {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 35px 30px;
+    background: #172b4d;
+    color: #ffffff;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.hero-box h1 {
+    font-size: 30px;
+    margin-bottom: 14px;
+}
+
+.hero-box h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.hero-box p {
+    font-size: 16px;
+    color: #f0f3f7;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   عنوان بخش‌ها
+========================= */
+
+.services-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.services-section > h2,
+.insurance-box > h2,
+.why-us-box > h2 {
+    color: #172b4d;
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.section-subtitle {
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   کارت خدمات
+========================= */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    background: #ffffff;
+    border: 1px solid #e4e8ed;
+    border-radius: 16px;
+    padding: 28px 22px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 25px rgba(0, 0, 0, 0.10);
+}
+
+.service-icon {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    color: #172b4d;
+    font-size: 19px;
+    margin-bottom: 9px;
+}
+
+.service-card p {
+    color: #555555;
+    font-size: 15px;
+}
+
+
+/* =========================
+   بیمه حوادث
+========================= */
+
+.insurance-section {
+    padding: 20px 20px 45px;
+}
+
+.insurance-box {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #f5f7fa;
+    border: 1px solid #dce2e9;
+    border-right: 6px solid #172b4d;
+    border-radius: 15px;
+}
+
+.insurance-box h2 {
+    margin-bottom: 15px;
+}
+
+.insurance-box p {
+    color: #444444;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.insurance-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   چرا انتخاب نیک
+========================= */
+
+.why-us-section {
+    padding: 20px 20px 50px;
+}
+
+.why-us-box {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 25px;
+    background: #172b4d;
+    color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.why-us-box > h2 {
+    color: #ffffff;
+}
+
+.why-us-box .section-subtitle {
+    color: #dce4ef;
+}
+
+.why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.why-card {
+    padding: 22px 18px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+}
+
+.why-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.why-card p {
+    color: #e4e9f0;
+    font-size: 14px;
+}
+
+
+/* =========================
+   فوتر
+========================= */
+
+.footer {
+    margin-top: 10px;
+    background: #f5f6f8;
+    border-top: 1px solid #e0e3e8;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 25px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    gap: 35px;
+}
+
+.footer-brand h2 {
+    color: #172b4d;
+    font-size: 32px;
+}
+
+.footer-links h3,
+.footer-location h3 {
+    color: #172b4d;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.footer-links a {
+    color: #555555;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #172b4d;
+}
+
+.footer-location {
+    color: #555555;
+}
+
+.footer-location p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.location-icon {
+    font-size: 28px;
+    margin-bottom: 3px;
+}
+
+.footer-bottom {
+    padding: 15px 20px;
+    text-align: center;
+    border-top: 1px solid #e0e3e8;
+    color: #777777;
+    font-size: 13px;
+}
+
+
+/* =========================
+   موبایل
+========================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        padding: 20px 12px 25px;
+    }
+
+    .hero-box {
+        padding: 28px 18px;
+        border-radius: 14px;
+    }
+
+    .hero-box h1 {
+        font-size: 23px;
+    }
+
+    .hero-box h2 {
+        font-size: 17px;
+    }
+
+    .hero-box p {
+        font-size: 14px;
+    }
+
+    .services-section {
+        padding: 35px 14px;
+    }
+
+    .services-section > h2,
+    .insurance-box > h2,
+    .why-us-box > h2 {
+        font-size: 23px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .service-card {
+        padding: 23px 18px;
+    }
+
+    .insurance-section {
+        padding: 10px 14px 35px;
+    }
+
+    .insurance-box {
+        padding: 23px 18px;
+        border-right-width: 4px;
+    }
+
+    .why-us-section {
+        padding: 10px 14px 35px;
+    }
+
+    .why-us-box {
+        padding: 30px 16px;
+        border-radius: 15px;
+    }
+
+    .why-us-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+}
+
+
+/* =========================
+   کارت‌های دسترسی سریع فوتر
+========================= */
+
+.footer-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.footer-link-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-height: 58px;
+    padding: 12px 15px;
+    background: #ffffff;
+    border: 1px solid #dce2e9;
+    border-radius: 12px;
+    color: #172b4d;
+    transition: all 0.2s ease;
+}
+
+.footer-link-card span {
+    font-size: 21px;
+}
+
+.footer-link-card strong {
+    font-size: 14px;
+}
+
+.footer-link-card:hover {
+    background: #172b4d;
+    color: #ffffff;
+    border-color: #172b4d;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   فوتر موبایل
+========================= */
+
+@media (max-width: 700px) {
+
+    .footer-menu {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-link-card {
+        min-height: 54px;
+    }
+}
+
+
+/* =========================
+   دسترسی سریع
+========================= */
+
+.quick-access-section {
+    padding: 10px 20px 45px;
+}
+
+.quick-access-box {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quick-access-box h2 {
+    color: #172b4d;
+    font-size: 27px;
+    margin-bottom: 22px;
+}
+
+.quick-access-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.quick-access-card {
+    min-height: 105px;
+    padding: 18px 12px;
+    background: #ffffff;
+    border: 1px solid #dce2e9;
+    border-radius: 14px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.06);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    color: #172b4d;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.quick-access-card span {
+    font-size: 28px;
+}
+
+.quick-access-card strong {
+    font-size: 14px;
+}
+
+.quick-access-card:hover {
+    background: #172b4d;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   دسترسی سریع در موبایل
+========================= */
+
+@media (max-width: 700px) {
+
+    .quick-access-section {
+        padding: 5px 14px 35px;
+    }
+
+    .quick-access-box h2 {
+        font-size: 23px;
+    }
+
+    .quick-access-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .quick-access-card {
+        min-height: 95px;
+    }
+}
+
+
+/* =========================
+   اصلاح متن کارت‌های خدمات
+========================= */
+
+.service-card {
+    text-align: right;
+}
+
+.service-card h3 {
+    font-size: 17px;
+    text-align: right;
+}
+
+.service-card p {
+    font-size: 13px;
+    line-height: 1.8;
+    text-align: right;
+}
+
+.service-icon {
+    text-align: right;
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+
+/* عنوان توضیح خدمات */
+.services-section .section-subtitle {
+    font-size: 14px;
+}
+
+
+/* موبایل */
+@media (max-width: 700px) {
+
+    .service-card h3 {
+        font-size: 16px;
+    }
+
+    .service-card p {
+        font-size: 12.5px;
+    }
+
+    .service-icon {
+        font-size: 32px;
+    }
+
+    .services-section .section-subtitle {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================
+   صفحه تماس با ما
+========================= */
+
+.contact-page {
+    min-height: calc(100vh - 80px);
+    padding-bottom: 40px;
+}
+
+.page-header {
+    padding: 35px 20px 25px;
+}
+
+.page-header-box {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 28px 25px;
+    background: #172b4d;
+    color: #ffffff;
+    border-radius: 17px;
+    text-align: center;
+    box-shadow: 0 7px 22px rgba(0, 0, 0, 0.10);
+}
+
+.page-header-box h1 {
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.page-header-box p {
+    font-size: 14px;
+    color: #e9edf3;
+}
+
+
+/* شماره‌های تماس */
+
+.contact-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+
+.contact-section > h2 {
+    color: #172b4d;
+    font-size: 23px;
+    margin-bottom: 18px;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 22px;
+    background: #ffffff;
+
+    border: 1px solid #dce2e9;
+    border-radius: 15px;
+
+    color: #222222;
+
+    box-shadow: 0 5px 17px rgba(0, 0, 0, 0.06);
+
+    transition: 0.2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+    border-color: #172b4d;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10);
+}
+
+.contact-icon {
+    font-size: 34px;
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.contact-info h3 {
+    color: #172b4d;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.contact-info p {
+    direction: ltr;
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.priority-label {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #eef2f7;
+    color: #172b4d;
+    border-radius: 6px;
+    font-size: 11px;
+}
+
+
+/* =========================================
+   اطلاعات تماس و کادرهای صفحه تماس
+========================================= */
+
+.contact-info-box {
+    max-width: 900px;
+    margin: 15px auto 25px;
+    padding: 25px;
+    background: #f5f7fa;
+    border-right: 5px solid #172b4d;
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+.contact-box-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    background: #172b4d;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.contact-info-box h2 {
+    color: #172b4d;
+    font-size: 20px;
+    margin: 0 0 12px;
+}
+
+.contact-info-box p {
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.9;
+    margin: 0 0 8px;
+}
+
+.contact-info-box strong {
+    color: #172b4d;
+}
+
+.online-request-box {
+    text-align: right;
+}
+
+.contact-request-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 24px;
+    background: #172b4d;
+    color: #ffffff;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.contact-request-button:hover {
+    opacity: 0.9;
+}
+
+
+/* بازگشت */
+
+.back-home {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.back-home a {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #172b4d;
+    color: #ffffff;
+    border-radius: 9px;
+    font-size: 14px;
+}
+
+
+/* موبایل */
+
+@media (max-width: 700px) {
+
+    .page-header {
+        padding: 20px 14px;
+    }
+
+    .page-header-box {
+        padding: 24px 18px;
+    }
+
+    .page-header-box h1 {
+        font-size: 23px;
+    }
+
+    .contact-section {
+        padding: 20px 14px;
+    }
+
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        padding: 18px;
+    }
+
+    .contact-info-box {
+        margin: 10px 14px 25px;
+        padding: 20px 17px;
+    }
+}/* =====================================================
+   فرم ثبت درخواست خدمات - Entekhab Nik
+===================================================== */
+
+
+/* بدنه فرم */
+
+.request-header {
+    width: 92%;
+    max-width: 700px;
+    margin: 25px auto 15px;
+    padding: 25px 20px;
+    text-align: center;
+    background: #102a43;
+    color: white;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+.request-header h1 {
+    margin: 0 0 10px;
+    font-size: 28px;
+}
+
+.request-header p {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   نوار مراحل
+===================================================== */
+
+.request-progress {
+    width: 92%;
+    max-width: 700px;
+    margin: 15px auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+}
+
+.progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    min-width: 48px;
+    color: #777;
+}
+
+.progress-step span {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.progress-step small {
+    font-size: 12px;
+}
+
+.progress-step.active span,
+.progress-step.completed span {
+    background: #102a43;
+    color: white;
+}
+
+.progress-step.active small,
+.progress-step.completed small {
+    color: #102a43;
+    font-weight: bold;
+}
+
+.progress-line {
+    flex: 1;
+    max-width: 70px;
+    height: 2px;
+    background: #ddd;
+    margin: 0 5px;
+}
+
+
+/* =====================================================
+   مهم:
+   فقط مرحله active نمایش داده شود
+===================================================== */
+
+.request-page {
+    display: none !important;
+}
+
+.request-page.active {
+    display: block !important;
+}
+
+
+/* =====================================================
+   کادر اصلی
+===================================================== */
+
+.request-container {
+    width: 92%;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.request-card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.request-card-icon {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.request-card h2 {
+    text-align: right;
+    color: #102a43;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.request-help {
+    text-align: right;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   فرم‌ها
+===================================================== */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    text-align: right;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background: #fff;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #102a43;
+}
+
+.form-group textarea {
+    resize: vertical;
+    line-height: 1.8;
+}
+
+
+/* دو فیلد کنار هم */
+
+.form-row {
+    display: flex;
+    gap: 12px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+
+/* =====================================================
+   جزئیات خدمات
+===================================================== */
+
+.service-details {
+    display: none;
+}
+
+.service-details h3 {
+    text-align: right;
+    color: #102a43;
+    margin: 0 0 20px;
+    font-size: 20px;
+}
+
+
+/* =====================================================
+   دکمه‌ها
+===================================================== */
+
+.request-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.request-buttons button {
+    flex: 1;
+    min-height: 48px;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-next,
+.btn-submit {
+    background: #102a43;
+    color: white;
+}
+
+.btn-prev {
+    background: #e5e7eb;
+    color: #333;
+}
+
+.request-buttons button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =====================================================
+   خلاصه نهایی
+===================================================== */
+
+.final-review {
+    margin-top: 25px;
+    padding: 18px;
+    background: #f5f7fa;
+    border-radius: 12px;
+}
+
+.final-review h3 {
+    margin-top: 0;
+    color: #102a43;
+}
+
+.summary-section {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.summary-section:last-child {
+    border-bottom: none;
+}
+
+.summary-section h4 {
+    color: #102a43;
+    margin: 0 0 8px;
+}
+
+.summary-section p {
+    margin: 6px 0;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   پیام موفقیت
+===================================================== */
+
+.submit-message {
+    margin-top: 20px;
+}
+
+.success-box {
+    text-align: center;
+    padding: 20px;
+    background: #eef8f0;
+    border-radius: 12px;
+}
+
+.success-icon {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.tracking-number {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 18px;
+    background: #102a43;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   موبایل
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .request-header {
+        margin-top: 15px;
+        padding: 20px 15px;
+    }
+
+    .request-header h1 {
+        font-size: 24px;
+    }
+
+    .request-progress {
+        width: 96%;
+    }
+
+    .progress-line {
+        max-width: 35px;
+    }
+
+    .progress-step small {
+        font-size: 10px;
+    }
+
+    .request-container {
+        width: 94%;
+    }
+
+    .request-card {
+        padding: 20px 15px;
+    }
+
+    .request-card h2 {
+        font-size: 21px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .request-buttons {
+        flex-direction: row;
+    }
+
+}
+
+
+/* =====================================================
+   صفحه درباره ما
+===================================================== */
+
+.about-content {
+    width: 92%;
+    max-width: 900px;
+    margin: 20px auto 35px;
+}
+
+.about-card {
+    margin-bottom: 20px;
+    padding: 25px;
+    background: #f5f7fa;
+    border-right: 5px solid #172b4d;
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+.about-card h2 {
+    color: #172b4d;
+    font-size: 21px;
+    line-height: 1.8;
+    margin: 0 0 14px;
+}
+
+.about-card p {
+    color: #555555;
+    font-size: 15px;
+    line-height: 2.1;
+    margin: 0;
+}
+
+.about-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    background: #172b4d;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.guarantee-card {
+    background: #f8fafc;
+}
+
+
+/* موبایل */
+
+@media (max-width: 700px) {
+
+    .about-content {
+        width: 94%;
+        margin-top: 15px;
+    }
+
+    .about-card {
+        padding: 20px 17px;
+    }
+
+    .about-card h2 {
+        font-size: 19px;
+    }
+
+    .about-card p {
+        font-size: 14px;
+        line-height: 2;
+    }
+
+}
+
+
+/* =====================================================
+   صفحه پیگیری درخواست
+===================================================== */
+
+.tracking-content {
+    width: 92%;
+    max-width: 700px;
+    margin: 20px auto 35px;
+}
+
+.tracking-card {
+    padding: 30px 25px;
+    background: #f5f7fa;
+    border-right: 5px solid #172b4d;
+    border-radius: 16px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.tracking-icon {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    background: #172b4d;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.tracking-card h2 {
+    margin: 0 0 12px;
+    color: #172b4d;
+    font-size: 22px;
+}
+
+.tracking-description {
+    margin: 0 0 25px;
+    color: #555555;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.tracking-card .form-group {
+    margin-bottom: 18px;
+}
+
+.tracking-card .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.tracking-card .form-group input {
+    width: 100%;
+    padding: 13px;
+    box-sizing: border-box;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+.tracking-card .form-group input:focus {
+    border-color: #172b4d;
+}
+
+.tracking-button {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #172b4d;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tracking-button:hover {
+    opacity: 0.9;
+}
+
+.tracking-result {
+    display: none;
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #e1e5ea;
+    line-height: 2;
+}
+
+.tracking-result.show {
+    display: block;
+}
+
+
+/* موبایل */
+
+@media (max-width: 700px) {
+
+    .tracking-content {
+        width: 94%;
+        margin-top: 15px;
+    }
+
+    .tracking-card {
+        padding: 22px 17px;
+    }
+
+    .tracking-card h2 {
+        font-size: 20px;
+    }
+
+    .tracking-description {
+        font-size: 14px;
+    }
+
+}
