@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nasibehsmd-cpu.github.io/Entekhab_Nik0/sitemap.xml
