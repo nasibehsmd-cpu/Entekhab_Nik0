@@ -1366,3 +1366,139 @@ a {
     }
 
 }
+
+/* =========================
+   کارت‌های دسترسی سریع صفحات خدمات
+========================= */
+
+.quick-access-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.quick-access-cards a {
+    display: block;
+    text-decoration: none;
+}
+
+.quick-card {
+    min-height: 90px;
+    padding: 18px 20px;
+    background: #ffffff;
+    border: 1px solid #dce2e9;
+    border-radius: 14px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.06);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #172b4d;
+    text-align: center;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.quick-card h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+}
+
+.quick-card p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.quick-card:hover {
+    background: #172b4d;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 700px) {
+
+    .quick-access-cards {
+        gap: 12px;
+        max-width: 100%;
+    }
+
+    .quick-card {
+        min-height: 85px;
+    }
+}
+
+
+/* =========================
+   دسترسی سریع ساده
+========================= */
+
+.quick-access-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.quick-access-cards a {
+    display: block;
+    padding: 4px 0;
+    color: #172b4d;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.quick-access-cards a:hover {
+    text-decoration: underline;
+}
+
+.quick-access-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.quick-access-links a {
+    display: block;
+    margin: 0;
+    padding: 2px 0;
+    color: #172b4d;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.quick-access-links a:hover {
+    text-decoration: underline;
+}
+
+.quick-access-links a {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+.quick-access-links > div {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.quick-access-links > div > a {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 2 !important;
+}
