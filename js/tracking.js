@@ -12,7 +12,7 @@
 ===================================================== */
 
 const TRACKING_API_URL =
-    "https://script.google.com/macros/s/AKfycbwSw_827fYRoVidZR8nm11zka1c7IA83BR6g-R4dLBWi21hV2-RnwhmnsJKEJyc3Q/exec";
+    "https://script.google.com/macros/s/AKfycbyKggw87nm7RMusf1pRqMUAnAJxNpjAqL-6lyv-QEl_AtyoP-EN5ESN026BFPFb1bxI/exec";
 
 
 /* =====================================================
@@ -170,6 +170,10 @@ function showTrackingResult(
         data.serviceTime || "ثبت نشده";
 
 
+    const description =
+        data.description || "ثبت نشده";
+
+
     const status =
         data.status || "در انتظار بررسی";
 
@@ -306,6 +310,17 @@ function showTrackingResult(
 
             ${escapeTracking(
                 serviceTime
+            )}
+        </p>
+
+
+        <p>
+            <strong>
+                توضیحات تکمیلی:
+            </strong>
+
+            ${escapeTracking(
+                description
             )}
         </p>
 

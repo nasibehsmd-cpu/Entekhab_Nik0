@@ -12,7 +12,7 @@
 // =====================================================
 
 const APPS_SCRIPT_URL =
-    "https://script.google.com/macros/s/AKfycbwSw_827fYRoVidZR8nm11zka1c7IA83BR6g-R4dLBWi21hV2-RnwhmnsJKEJyc3Q/exec";
+    "https://script.google.com/macros/s/AKfycby9giET0-R9DrHy--V7yFxgvCl1yC-a4M9xrFieXXcbD3DWRfcaclKd-L1WvQYw8LzS/exec";
 
 
 // =====================================================
@@ -536,10 +536,6 @@ function saveStairsDetails() {
                 "stairs-ladder"
             ),
 
-        description:
-            getValue(
-                "stairs-description"
-            )
 
     };
 
@@ -589,10 +585,6 @@ function saveHomeDetails() {
                 "home-pet"
             ),
 
-        description:
-            getValue(
-                "home-description"
-            )
 
     };
 
@@ -637,10 +629,6 @@ function saveOfficeDetails() {
                 "office-ladder"
             ),
 
-        description:
-            getValue(
-                "office-description"
-            )
 
     };
 
@@ -675,10 +663,6 @@ function saveEventDetails() {
                 "event-gender"
             ),
 
-        description:
-            getValue(
-                "event-description"
-            )
 
     };
 
@@ -1238,6 +1222,17 @@ if (submitRequest) {
 
             submitRequest.textContent =
                 "در حال ثبت درخواست...";
+
+
+            console.log(
+                "REQUEST DATA:",
+                JSON.stringify(requestData, null, 2)
+            );
+
+            alert(
+                "توضیحات ارسال‌شده:\n" +
+                (requestData.schedule.description || "خالی است")
+            );
 
 
             try {
