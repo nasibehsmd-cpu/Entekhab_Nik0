@@ -16,15 +16,15 @@ android {
 
     signingConfigs {
         release {
-            def keystorePath = System.getenv("KEYSTORE_PATH")
-            def keystorePassword = System.getenv("KEYSTORE_PASSWORD")
-            def keyAlias = System.getenv("KEY_ALIAS")
+            def envKeystorePath = System.getenv("KEYSTORE_PATH")
+            def envKeystorePassword = System.getenv("KEYSTORE_PASSWORD")
+            def envKeyAlias = System.getenv("KEY_ALIAS")
 
-            if (keystorePath && keystorePassword && keyAlias) {
-                storeFile file(keystorePath)
-                storePassword = keystorePassword
-                keyAlias = keyAlias
-                keyPassword = keystorePassword
+            if (envKeystorePath && envKeystorePassword && envKeyAlias) {
+                storeFile file(envKeystorePath)
+                storePassword = envKeystorePassword
+                keyAlias = envKeyAlias
+                keyPassword = envKeystorePassword
                 storeType "PKCS12"
             }
         }
