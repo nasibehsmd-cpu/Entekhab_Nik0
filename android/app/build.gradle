@@ -22,9 +22,9 @@ android {
 
             if (keystorePath && keystorePassword && keyAlias) {
                 storeFile file(keystorePath)
-                storePassword keystorePassword
-                keyAlias keyAlias
-                keyPassword keystorePassword
+                storePassword = keystorePassword
+                keyAlias = keyAlias
+                keyPassword = keystorePassword
                 storeType "PKCS12"
             }
         }
